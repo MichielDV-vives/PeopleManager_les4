@@ -1,0 +1,17 @@
+@model Person
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+        <p class="card-text">
+            @if (!string.IsNullOrEmpty(Model.Email))
+            {
+                <a href="mailto:@Model.Email">@Model.Email</a>
+            }
+            else
+            {
+                <span>No email available</span>
+            }
+        </p>
+    </div>
+</div>

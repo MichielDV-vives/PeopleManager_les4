@@ -19,6 +19,8 @@ namespace PeopleManager.Ui.Mvc.Controllers
             var people = _database.People;
             return View(people);
         }
+        
+        
 
         public IActionResult Privacy()
         {
